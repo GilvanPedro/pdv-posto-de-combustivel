@@ -8,14 +8,14 @@
 6- Aquisição de Conhecimento (Spikes): Investigação ou protótipo para mitigar dúvidas;
 7- Solicitações de Clientes e Partes: Demandas vindas de usuários e outras pessoas envolvidas no projeto;
 
-# Squad
+# Squad 4
     -> Gilvan Pedro de Castro Melo Campos;
-    ->
-    ->
-    ->
-    ->
-    ->
-    ->
+    -> Eduardo Brandão
+    -> Isabella Martins
+    -> João Paulo
+    -> Scarcela
+    -> Giovanna Alice
+    -> Denani
     ->
     ->
     ->
