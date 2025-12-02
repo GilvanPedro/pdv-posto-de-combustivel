@@ -72,20 +72,29 @@ O projeto segue uma arquitetura em camadas bem definida, promovendo a separaçã
 
 ```mermaid
 graph TD
-    A[Frontend - Java Swing] -->|HTTP/JSON| B(Backend - Spring Boot REST API)
-    B -->|JPA/Hibernate| C[Database - PostgreSQL]
-    
+    A[Frontend - Java Swing\nUI Cliente] -->|HTTP / JSON| B[Backend - Spring Boot\nREST API]
+
     subgraph Backend Layers
-        B1(Controller) --> B2(Service)
-        B2 --> B3(Repository)
-        B3 --> B4(Entity)
+        direction TB
+        C1[Controller\nRecebe requisições]
+        C2[Service\nLógica de Negócios]
+        C3[Repository\nAcesso ao Banco]
+        C4[Entity\nModelos JPA]
+        C1 --> C2 --> C3 --> C4
     end
-    
-    B --> B1
-    
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style B fill:#ccf,stroke:#333,stroke-width:2px
-    style C fill:#ddf,stroke:#333,stroke-width:2px
+
+    B --> C1
+    C3 --> D[(PostgreSQL\nBanco de Dados)]
+
+    %% Estilos para alto contraste
+    style A fill:#003C8F,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style B fill:#01579B,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+    style C1 fill:#0277BD,stroke:#FFFFFF,color:#FFFFFF
+    style C2 fill:#0288D1,stroke:#FFFFFF,color:#FFFFFF
+    style C3 fill:#039BE5,stroke:#FFFFFF,color:#FFFFFF
+    style C4 fill:#29B6F6,stroke:#FFFFFF,color:#FFFFFF
+    style D fill:#004C8C,stroke:#FFFFFF,stroke-width:2px,color:#FFFFFF
+
 ```
 
 ### Padrões de Projeto
