@@ -249,6 +249,3 @@ Este projeto está licenciado sob a Licença **MIT**. Consulte o arquivo [LICENS
 
 *   **Autor:** Gilvan Pedro
 *   **GitHub:** [GilvanPedro](https://github.com/GilvanPedro)
-
----
-*Este README foi aprimorado por Manus AI.*
